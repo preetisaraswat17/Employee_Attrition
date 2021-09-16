@@ -72,15 +72,12 @@ We tried to establish an baseline model in this work which can then be compared 
 Confusion Matrix: 
 ![image](https://user-images.githubusercontent.com/17712770/133558724-bc29d174-147b-4540-91ad-e166423dc255.png)
 
-Precision, recall, and f1-score are calculated for each class in a binary fashion. The results are drastically different between classes. The precision was highest for the Attrition class (0.83) . In addition to the large class imbalance, the atrrition class may simply be intrinsically harder to predict given the same set of predictor variables.
+Precision, recall, and f1-score are calculated for each class in a binary fashion. The results are quite similar between classes. The recall was highest for the Attrition class 0.87. In addition to the large class imbalance, the atrrition class may simply be intrinsically harder to predict given the same set of predictor variables.
 
-The recall scores is very low (0.14). The results imply that the model varies widely in the number of false positives between classes.
-
-We also plotted the RUC_auc score for this model and it is 87.24%. This translates to an average of 87.24% accuracy in predicting each class correctly.
-
+We also plotted the RUC_auc score for this model and it is 77.5%. This translates to an average of 77.5% accuracy in predicting each class correctly.
 ![image](https://user-images.githubusercontent.com/17712770/116512151-6e9b1380-a87c-11eb-8f5f-07881af60e3e.png)
 
-Here accuracy score of the model was 87%. However our main evaluation matrix is confusion matrix. Here we chose precision/recall as our main matrix because we want to know that if the model is predicting 10 employees and out of those 10 if only 4 are actually intending to leave even then doing something good would be a nice gesture for other 6 employee and will increase their productivity. However if the resources are low and We want the model to only predict the employees who are leaving and not include the false positives as it hits the company resources. Then we can go for precision as our final matrix. Here we choose precision but Still the final metrics depends on what’s the end goal of business.
+Here Roc_auc score of the model was 77%. However our main evaluation matrix is confusion matrix. Here we chose precision/recall as our main matrix because we want to know that if the model is predicting 10 employees and out of those 10 if only 4 are actually intending to leave even then doing something good would be a nice gesture for other 6 employee and will increase their productivity. However if the resources are low and We want the model to only predict the employees who are leaving and not include the false positives as it hits the company resources. Then we can go for precision as our final matrix. Here we choose precision but Still the final metrics depends on what’s the end goal of business.
 
 ### Feature Importances:
 
