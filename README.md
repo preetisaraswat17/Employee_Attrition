@@ -70,7 +70,7 @@ Precision and recall are favored over the true positive and true negative rates 
 
 We tried to establish an baseline model in this work which can then be compared to other models in future work, a random forest model. A Randomised CV algorithm is used to tune the hyperparameters of model. Random Forest models are popular for many classification tasks due to their accuracy and ability to give feature importances.The results are summarized in Table below.
 Confusion Matrix: 
-![image](https://user-images.githubusercontent.com/17712770/116512003-31368600-a87c-11eb-8c51-d37471be97ba.png)
+![image](https://user-images.githubusercontent.com/17712770/133558724-bc29d174-147b-4540-91ad-e166423dc255.png)
 
 Precision, recall, and f1-score are calculated for each class in a binary fashion. The results are drastically different between classes. The precision was highest for the Attrition class (0.83) . In addition to the large class imbalance, the atrrition class may simply be intrinsically harder to predict given the same set of predictor variables.
 
