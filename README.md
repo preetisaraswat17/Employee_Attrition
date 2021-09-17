@@ -75,9 +75,21 @@ Confusion Matrix:
 Precision, recall, and f1-score are calculated for each class in a binary fashion. The results are quite similar between classes. The recall was highest for the Attrition class 0.87. In addition to the large class imbalance, the atrrition class may simply be intrinsically harder to predict given the same set of predictor variables.
 
 We also plotted the RUC_auc score for this model and it is 77.5%. This translates to an average of 77.5% accuracy in predicting each class correctly.
-![image](https://user-images.githubusercontent.com/17712770/116512151-6e9b1380-a87c-11eb-8f5f-07881af60e3e.png)
 
-Here Roc_auc score of the model was 77%. However our main evaluation matrix is confusion matrix. Here we chose precision/recall as our main matrix because we want to know that if the model is predicting 10 employees and out of those 10 if only 4 are actually intending to leave even then doing something good would be a nice gesture for other 6 employee and will increase their productivity. However if the resources are low and We want the model to only predict the employees who are leaving and not include the false positives as it hits the company resources. Then we can go for precision as our final matrix. Here we choose precision but Still the final metrics depends on what’s the end goal of business.
+![image](https://user-images.githubusercontent.com/17712770/133847300-73e0989b-75fd-445b-8b47-6733692bc0a0.png)
+
+Here is the precision recall curve:
+
+![image](https://user-images.githubusercontent.com/17712770/133847146-4a86ba0c-e38b-44d1-925e-8c022fcc5867.png)
+
+Here Roc_auc score of the model was 77%. However our main evaluation matrix is confusion matrix. Here we chose precision/recall as our main matrix because we want to know that if the model is predicting 10 employees and out of those 10 if only 4 are actually intending to leave even then doing something good would be a nice gesture for other 6 employee and will increase their productivity. However if the resources are low and We want the model to only predict the employees who are leaving and not include the false positives as it hits the company resources. So we can actually choose whats threshold we want for our model based on if the company wants to reduce false positives(precision) or false negatives (recall). It is a tradeoff between the precision and recall and the final metrics depends on what’s the end goal of business.
+
+Some examples of choosing threshold based on different values of precision and recall are:
+
+![image](https://user-images.githubusercontent.com/17712770/133846869-23ed630e-65bf-45e1-b1d8-c8df0c0b74e3.png)
+
+![image](https://user-images.githubusercontent.com/17712770/133846917-aba4caf1-9dcd-4949-8c09-5f60a540959f.png)
+
 
 ### Feature Importances:
 
